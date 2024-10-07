@@ -8,6 +8,12 @@ dependencies:
   '@vercel/postgres':
     specifier: ^0.5.1
     version: 0.5.1
+  react:
+    specifier: 18.2.0
+    version: 18.2.0
+  use-debounce:
+    specifier: ^10.0.0
+    version: 10.0.0(react@18.2.0)
 
 packages:
 
@@ -45,6 +51,17 @@ packages:
     requiresBuild: true
     dependencies:
       node-gyp-build: 4.8.0
+    dev: false
+
+  /js-tokens@4.0.0:
+    resolution: {integrity: sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==}
+    dev: false
+
+  /loose-envify@1.4.0:
+    resolution: {integrity: sha512-lyuxPGr/Wfhrlem2CL/UcnUc1zcqKAImBDzukY7Y5F/yQiNdko6+fRLevlw1HgMySw7f611UIY408EtxRSoK3Q==}
+    hasBin: true
+    dependencies:
+      js-tokens: 4.0.0
     dev: false
 
   /node-gyp-build@4.8.0:
@@ -92,6 +109,22 @@ packages:
     engines: {node: '>=0.10.0'}
     dependencies:
       xtend: 4.0.2
+    dev: false
+
+  /react@18.2.0:
+    resolution: {integrity: sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ==}
+    engines: {node: '>=0.10.0'}
+    dependencies:
+      loose-envify: 1.4.0
+    dev: false
+
+  /use-debounce@10.0.0(react@18.2.0):
+    resolution: {integrity: sha512-XRjvlvCB46bah9IBXVnq/ACP2lxqXyZj0D9hj4K5OzNroMDpTEBg8Anuh1/UfRTRs7pLhQ+RiNxxwZu9+MVl1A==}
+    engines: {node: '>= 16.0.0'}
+    peerDependencies:
+      react: '>=16.8.0'
+    dependencies:
+      react: 18.2.0
     dev: false
 
   /utf-8-validate@6.0.3:
